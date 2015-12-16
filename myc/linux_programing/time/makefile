@@ -1,10 +1,11 @@
 CC=gcc
 CFLAGS=-std=gnu99 -Wall
 
-TARGET=calendar_time
-SRCS=../lib/get_num.c ../lib/error_functions.c calendar_time.c
+TARGET=process_time
+SRCS=../lib/get_num.c ../lib/error_functions.c process_time.c
 
 INC= -I ../lib
+
 OBJS=$(SRCS:.c=.o)
 
 $(TARGET):$(OBJS)
